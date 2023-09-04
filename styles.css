@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0ead6; /* Color de fondo pastel */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex container a columna */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambia height a min-height para evitar que el contenido lo haga más alto */
+}
+
+.container {
+    background-color: #fff; /* Color de fondo del cuadro principal */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el cuadro principal y el botón de regreso */
+}
+
+.extra-large-title {
+    font-size: 60px; /* Tamaño de fuente más grande */
+    margin-top: 20px; /* Mayor separación arriba */
+    color: #f7caca;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    word-wrap: break-word; /* Permite que el título se separe en múltiples líneas */
+}
+
+/* Estilos para los botones extra grandes */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.extra-large-button {
+    display: inline-block; /* Coloca los botones en línea uno al lado del otro */
+    width: 250px; /* Ancho de botón más grande */
+    padding: 15px 30px; /* Padding más grande */
+    background-color: #ffcccb; /* Color de fondo */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold; /* Letras más vistosas */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    border: none;
+    border-radius: 75px; /* Forma más redondeada */
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
+}
+
+.extra-large-button:hover {
+    background-color: #ffb6b5; /* Cambia el color de fondo al pasar el mouse */
+    transform: translateY(-10px); /* Aplica la animación de flotación */
+}
+
+/* Estilos para el botón de regreso */
+.back-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Aumenta el espacio superior para mover el botón más abajo */
+}
+
+.back-button {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff; /* Cambia el color del texto a blanco */
+    background-color: #87CEEB; /* Cambia el color de fondo a azul pastel */
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Agregar transiciones para el color de fondo y la transformación */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre el botón */
+    margin-top: 10px; /* Mueve el botón un poco más abajo */
+}
+
+/* Efecto mágico al pasar el mouse */
+.back-button:hover {
+    background-color: #4682B4; /* Cambio de color de fondo al pasar el mouse a un tono más oscuro */
+    transform: scale(1.1); /* Escala un poco más grande */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
+}
+
+/* Estilos para el buscador funcional */
+.search-container {
+    margin-top: 20px;
+}
+
+.search-input {
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #87CEEB;
+    box-shadow: 0 0 5px #87CEEB;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #87CEEB;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #4682B4;
+}
+
+/* Estilos para la tabla comparativa */
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilos para el botón de filtrar */
+.filter-button {
+    padding: 5px 10px;
+    background-color: #87CEEB;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #4682B4;
+}

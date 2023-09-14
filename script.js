@@ -1,18 +1,16 @@
-// Función para realizar la búsqueda
-document.getElementById("searchButton").addEventListener("click", function() {
-    var input, filter, container, buttons, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toLowerCase();
-    container = document.getElementById("appContainer");
-    buttons = container.getElementsByClassName("app-button");
+// Obtener el elemento del logo por su ID
+const logo = document.getElementById("logo");
 
-    for (i = 0; i < buttons.length; i++) {
-        var button = buttons[i];
-        txtValue = button.textContent || button.innerText;
-        if (txtValue.toLowerCase().indexOf(filter) > -1) {
-            button.style.display = "";
-        } else {
-            button.style.display = "none";
-        }
-    }
-});
+// Función para aplicar el efecto al hacer clic en el logo
+function applyLogoEffect() {
+    // Agregar una clase CSS al logo cuando se hace clic
+    logo.classList.add("logo-clicked");
+
+    // Después de un tiempo, quitar la clase para volver al estado normal
+    setTimeout(() => {
+        logo.classList.remove("logo-clicked");
+    }, 1000); // Ajusta el tiempo en milisegundos según tus preferencias
+}
+
+// Agregar un evento de clic al logo para llamar a la función
+logo.addEventListener("click", applyLogoEffect);

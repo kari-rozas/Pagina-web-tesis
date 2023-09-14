@@ -53,6 +53,21 @@ body {
     transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
 }
 
+.button {
+    display: inline-block; /* Coloca los botones en línea uno al lado del otro */
+    width: 150px; /* Ancho de botón más grande */
+    padding: 15px 15px; /* Padding más grande */
+    background-color: #8a5e96; /* Color de fondo */
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; /* Letras más vistosas */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    border: none;
+    border-radius: 75px; /* Forma más redondeada */
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
+}
+
 .extra-large-button:hover {
     background-color: #ffb6b5; /* Cambia el color de fondo al pasar el mouse */
     transform: translateY(-10px); /* Aplica la animación de flotación */
@@ -83,25 +98,6 @@ body {
     background-color: #4682B4; /* Cambio de color de fondo al pasar el mouse a un tono más oscuro */
     transform: scale(1.1); /* Escala un poco más grande */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
-}
-
-/* Estilos para el logo */
-.logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Efecto de escala al pasar el mouse */
-}
-
-/* Tamaño más pequeño para el logo */
-#logo {
-    width: 300px; /* Ancho del logo */
-    height: auto; /* Altura automática para mantener la proporción */
-}
-
-.logo-container:hover {
-    transform: scale(1.1); /* Escala el logo al pasar el mouse */
 }
 
 /* Estilos para el buscador funcional */

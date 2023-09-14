@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0ead6; /* Color de fondo pastel */
+    background-color: #E8A0BF; /* Color de fondo pastel */
     margin: 0;
     padding: 0;
     text-align: center;
@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    background-color: #fff; /* Color de fondo del cuadro principal */
+    background-color: #FDF4F5; /* Color de fondo del cuadro principal */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -24,7 +24,7 @@ body {
 .extra-large-title {
     font-size: 60px; /* Tamaño de fuente más grande */
     margin-top: 20px; /* Mayor separación arriba */
-    color: #f7caca;
+    color: #BA90C6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     word-wrap: break-word; /* Permite que el título se separe en múltiples líneas */
 }
@@ -42,8 +42,8 @@ body {
     display: inline-block; /* Coloca los botones en línea uno al lado del otro */
     width: 250px; /* Ancho de botón más grande */
     padding: 15px 30px; /* Padding más grande */
-    background-color: #ffcccb; /* Color de fondo */
-    color: #333;
+    background-color: #8a5e96; /* Color de fondo */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold; /* Letras más vistosas */
     font-size: 24px; /* Tamaño de fuente más grande */

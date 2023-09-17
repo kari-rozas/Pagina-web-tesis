@@ -1,18 +1,25 @@
-// Función para realizar la búsqueda
-document.getElementById("searchButton").addEventListener("click", function() {
-    var input, filter, container, buttons, i, txtValue;
-    input = document.getElementById("searchInput");
-    filter = input.value.toLowerCase();
-    container = document.getElementById("appContainer");
-    buttons = container.getElementsByClassName("app-button");
+// JavaScript para cargar el encabezado en el div #header-container
+document.addEventListener("DOMContentLoaded", function() {
+    const headerContainer = document.getElementById("header-container");
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "header.html", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            headerContainer.innerHTML = xhr.responseText;
 
-    for (i = 0; i < buttons.length; i++) {
-        var button = buttons[i];
-        txtValue = button.textContent || button.innerText;
-        if (txtValue.toLowerCase().indexOf(filter) > -1) {
-            button.style.display = "";
-        } else {
-            button.style.display = "none";
+            // Agregar el efecto al hacer clic en el logo
+            const logo = document.getElementById("logo");
+            function applyLogoEffect() {
+                // Agregar una clase CSS al logo cuando se hace clic
+                logo.classList.add("logo-clicked");
+
+                // Después de un tiempo, quitar la clase para volver al estado normal
+                setTimeout(() => {
+                    logo.classList.remove("logo-clicked");
+                }, 1000); // Ajusta el tiempo en milisegundos según tus preferencias
+            }
+            logo.addEventListener("click", applyLogoEffect);
         }
-    }
+    };
+    xhr.send();
 });

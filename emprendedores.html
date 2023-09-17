@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Contenedor del encabezado -->
+    <div id="header-container"></div>
+
     <div class="container">
         <h1 class="extra-large-title">Impuestos en empresas no formalizadas</h1>
         <p>Añadir información</p>
     </div>
 
-    <!-- Botón de regreso -->
+    <!-- Botón de regreso al inicio -->
     <div class="back-button-container">
-        <a href="impuestos.html" class="back-button">
-            <span>&#8592;</span> Regresar
+        <a href="index.html" class="back-button">
+            <span>&#8592;</span> Regresar al Inicio
         </a>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // JavaScript para cargar el encabezado en el div #header-container
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerContainer = document.getElementById("header-container");
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "header.html", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    headerContainer.innerHTML = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
 </body>
 </html>

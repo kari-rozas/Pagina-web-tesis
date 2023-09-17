@@ -32,7 +32,6 @@ body {
 /* Estilos para los botones extra grandes */
 .button-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas */
     justify-content: center; /* Centra los botones horizontalmente */
     align-items: center;
     margin-top: 20px;
@@ -51,6 +50,35 @@ body {
     border-radius: 75px; /* Forma más redondeada */
     margin: 10px;
     transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
+}
+
+/* Estilos para el menú */
+.menu-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #8a5e96;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #BA90C6;
 }
 
 .extra-large-button:hover {
@@ -155,3 +183,4 @@ th, td {
 .filter-button:hover {
     background-color: #4682B4;
 }
+

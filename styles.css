@@ -183,3 +183,33 @@ th, td {
 .filter-button:hover {
     background-color: #4682B4;
 }
+
+/* Estilos para el cuadro desplegable */
+details {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+details[open] {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el texto dentro del cuadro desplegable */
+details p {
+    margin: 10px 0;
+}
+
+/* Otros estilos generales */
+/* ... (Puedes mantener tus estilos existentes aquí) ... */

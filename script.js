@@ -1,5 +1,16 @@
-// JavaScript para cargar el encabezado en el div #header-container
 document.addEventListener("DOMContentLoaded", function() {
+    // Función para mostrar u ocultar el contenido del cuadro desplegable
+    function toggleContent(event) {
+        const content = event.target.nextElementSibling;
+        content.classList.toggle("show-content");
+    }
+
+    // Agregar el evento de clic a los encabezados de cuadro desplegable
+    const toggles = document.querySelectorAll(".toggle-header");
+    toggles.forEach(function(toggle) {
+        toggle.addEventListener("click", toggleContent);
+    });
+
     const headerContainer = document.getElementById("header-container");
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "header.html", true);
@@ -23,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send();
 });
+

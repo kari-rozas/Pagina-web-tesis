@@ -1,4 +1,5 @@
 /* Estilos generales */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #E8A0BF; /* Color de fondo pastel */
@@ -17,9 +18,12 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: left; /* Alineación del texto a la izquierda */
     margin-bottom: 20px; /* Espacio entre el cuadro principal y el botón de regreso */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    margin: 20px auto; /* Centra horizontalmente el cuadro principal */
 }
+
 
 .extra-large-title {
     font-size: 60px; /* Tamaño de fuente más grande */
@@ -29,28 +33,30 @@ body {
     word-wrap: break-word; /* Permite que el título se separe en múltiples líneas */
 }
 
-/* Estilos para los botones extra grandes */
 .button-container {
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
+    justify-content: space-around; /* Espaciado uniforme entre los botones */
     align-items: center;
+    flex-wrap: wrap; /* Permitir que los botones se envuelvan a la siguiente línea si es necesario */
     margin-top: 20px;
 }
 
 .extra-large-button {
     display: inline-block; /* Coloca los botones en línea uno al lado del otro */
-    width: 250px; /* Ancho de botón más grande */
+    width: 48%; /* Ancho del botón alrededor del 48% para dejar espacio entre ellos */
+    max-width: 300px; /* Ancho máximo del botón */
     padding: 15px 30px; /* Padding más grande */
     background-color: #8a5e96; /* Color de fondo */
     color: #ffffff;
     text-decoration: none;
     font-weight: bold; /* Letras más vistosas */
-    font-size: 24px; /* Tamaño de fuente más grande */
+    font-size: 18px; /* Tamaño de fuente */
     border: none;
     border-radius: 75px; /* Forma más redondeada */
-    margin: 10px;
+    margin: 10px; /* Margen entre los botones */
     transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
 }
+
 
 /* Estilos para el menú */
 .menu-container {
@@ -238,6 +244,19 @@ details p {
     color: #721c24;
 }
 
+/* Estilos para las imágenes */
+img {
+    max-width: 100%; /* Hace que las imágenes no excedan su contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+    border-radius: 10px; /* Agrega bordes redondeados a las imágenes */
+    margin-bottom: 10px; /* Espacio entre imágenes */
+}
 
-/* Otros estilos generales */
-/* ... (Puedes mantener tus estilos existentes aquí) ... */
+/* Estilos para sumup.html */
+.button-description-container {
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.button-description {
+    margin-bottom: 20px; /* Espacio entre la descripción y la lista */
+}

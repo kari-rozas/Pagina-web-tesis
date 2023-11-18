@@ -23,25 +23,60 @@
 
     <div class="container">
         <h1 class="extra-large-title">Impuestos en empresas formalizadas</h1>
+        <h2>Proceso de pago de impuestos y permisos</h2>
         <h3>Para empresas formalizadas</h3>
 
-        <img src="imagen34.png" alt="Imagen 34">
-        <img src="imagen35.png" alt="Imagen 35">
-        <img src="imagen36.png" alt="Imagen 36">
-        <img src="imagen37.png" alt="Imagen 37">
-        <img src="imagen38.png" alt="Imagen 38">
-        <img src="imagen39.png" alt="Imagen 39">
-        <img src="imagen40.png" alt="Imagen 40">
-        <img src="imagen41.png" alt="Imagen 41">
-        <img src="imagen42.png" alt="Imagen 42">
+        <div class="image-container">
+            <img src="imagen34.png" alt="Imagen 34" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen35.png" alt="Imagen 35" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen36.png" alt="Imagen 36" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen37.png" alt="Imagen 37" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen38.png" alt="Imagen 38" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen39.png" alt="Imagen 39" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen40.png" alt="Imagen 40" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen41.png" alt="Imagen 41" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen42.png" alt="Imagen 42" class="zoomable-image">
+        </div>
 
-<!-- Botón de regreso al inicio -->
-<div class="back-button-container">
-    <a href="impuestos.html" class="back-button">
-        <span>&#8592;</span> Regresar a Impuestos
-    </a>
-</div>
+    </div>
+
+    <!-- Estructura HTML para la imagen ampliada (debe estar al final de tu documento HTML): -->
+    <div class="zoom-overlay">
+        <img src="" alt="Zoomed Image" class="zoomed-image">
+    </div>
+
+    <!-- Botón de regreso al inicio -->
+    <div class="back-button-container">
+        <a href="impuestos.html" class="back-button">
+            <span>&#8592;</span> Regresar a Impuestos
+        </a>
+    </div>
 
     <script src="script.js"></script>
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(function () {
+                // Carga el contenido del footer.html en el footer de la página
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
 </body>
 </html>

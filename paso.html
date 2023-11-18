@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proceso de formalización</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <!-- Header: Logo en la esquina superior izquierda con enlace al inicio -->
@@ -23,18 +24,32 @@
 
     <div class="container">
         <h1 class="extra-large-title">Proceso de formalización</h1>
-        <div class="warning">
-            <p>Advertencia: Se recomienda contar con un profesional de contaduría para realizar el proceso ante algunas dudas.</p>
+        <div class="warning-box">
+            <div class="warning-icon">¡Advertencia!</div>
+            <div class="warning-text">
+                <p> --------------------- Se recomienda contar con un profesional de contaduría -------------------------------</p>
+                <p>---------------------- para realizar el proceso ante algunas dudas. ---------------------------------------------</p>
+            </div>
         </div>
 
+        <!-- Resto del contenido... -->
+
         <h2>Paso a paso para la formalización</h2>
+        <!-- ... -->
+
         <p>Link para el registro: <a href="https://www.registrodeempresasysociedades.cl" target="_blank">https://www.registrodeempresasysociedades.cl</a></p>
         <p>1. Ingresa en el link indicado y dirígete a la sección de “Constituye tu empresa” y presiona el botón de constituir.</p>
-        <img src="imagen1.png" alt="Paso 1"><p></p>
-        <img src="imagen2.png" alt="Paso 2">
-        <img src="imagen3.png" alt="Paso 3">
-        <img src="imagen4.png" alt="Paso 4">
+        <div class="image-container">
+            <img src="imagen1.png" alt="Imagen 1" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen2.png" alt="Imagen 2" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen3.png" alt="Imagen 3" class="zoomable-image">
+        </div>
 
+        <!-- Resto del contenido... -->
         <p>Nos enfocaremos principalmente en la conformación de empresas como sPA y ltda.</p>
         <p>Explicación y diferencias: <a href="https://juiciofacil.cl/emprende-facil-sociedad-spa-o-sociedad-de-responsabilidad-limitada-cual-me-conviene/" target="_blank">https://juiciofacil.cl/emprende-facil-sociedad-spa-o-sociedad-de-responsabilidad-limitada-cual-me-conviene/</a></p>
         <details class="advantages-container">
@@ -65,126 +80,143 @@
 
 
         <h2>Paso a paso para sPA:</h2>
-        <img src="imagen5.png" alt="Paso a paso para sPA">
-        <img src="imagen6.png" alt="Paso a paso para sPA">
+        <div class="image-container">
+            <img src="imagen5.png" alt="Imagen 1" class="zoomable-image">
+        </div>
+        <div class="image-container">
+            <img src="imagen6.png" alt="Imagen 2" class="zoomable-image">
+        </div>
 
         <h3>NOMBRE DE LA SOCIEDAD</h3>
-        <p>Descripción: Se refiere al nombre de la empresa, el cual deberá concluir con la expresión "SpA".</p>
-        <p>Ejemplos:</p>
-        <ul>
-            <li>Agrícola Los Muermos SpA</li>
-            <li>Ingeniería y Construcciones Rupanco SpA</li>
-            <li>González, Pérez y Soto SpA</li>
-        </ul>
+    <p>Descripción: Se refiere al nombre de la empresa, el cual deberá concluir con la expresión "SpA".</p>
+    <p>Ejemplos:</p>
+    <ul>
+        <li>Agrícola Los Muermos SpA</li>
+        <li>Ingeniería y Construcciones Rupanco SpA</li>
+        <li>González, Pérez y Soto SpA</li>
+    </ul>
 
-        <h3>NOMBRE DE FANTASÍA</h3>
-        <p>Descripción: Es el nombre que puede utilizar alternativamente la empresa, para fines publicitarios, comerciales y ante los bancos. Debe terminar con la palabra "SpA".</p>
-        <p>Ejemplo: AGRICOLA Los Muermos SpA</p>
-        <img src="imagen7.png" alt="Imagen 7">
-
-        <h3>DOMICILIO TRIBUTARIO</h3>
-        <p>Descripción: Es el domicilio que se registrará en el SII. Además, este domicilio determinará qué sucursal del SII se le asignará a su sociedad (en dicha sucursal deberá retirar el RUT).</p>
-        
-
-        <h3>DOMICILIO DE LA SOCIEDAD</h3>
-        <p>Descripción: Se refiere al lugar donde funcionará la empresa, no es necesario que sea detallado. Completar al menos, la ciudad.</p>
-        <img src="imagen8.png" alt="Imagen 8">
-        <!-- Continuar con las imágenes y la información restante -->
-
-        <h3>OBJETO SOCIAL</h3>
-        <p>Descripción: Se refiere a la actividad o rubro a que se dedicará la sociedad. Se admite la posibilidad de contemplar uno o más objetos específicos.</p>
-        <h3>CAPITAL DE LA SOCIEDAD</h3>
-        <p>Descripción: Se refiere al fondo común aportado por los socios, dividido en acciones. Las acciones que suscriban los accionistas podrán pagarse en dinero o con otros bienes, en conformidad a la información que será solicitada en el PASO 2.</p>
-        <h4>VALOR NOMINAL</h4>
-        <p>Descripción: Las acciones con valor nominal tienen un valor fijo. Por el contrario, las acciones sin valor nominal, solo representan un porcentaje del capital social, pero no tienen un valor determinado en los estatutos. Lo usual y la regla general es que las acciones sean SIN VALOR NOMINAL, por lo que le sugerimos completar esta opción.</p>
-        <h4>SERIE DE ACCIONES</h4>
-        <p>Descripción: Se entiende que son acciones de única serie, las acciones ordinarias, esto es, aquellas del mismo valor, que otorgan un voto por acción y todos los demás derechos inherentes a la acción, en conformidad a las normas generales aplicables. Las acciones de distinta serie están asociadas a acciones privilegiadas o preferidas, esto es, aquellas en que alguno de los derechos inherentes a la acción son modificados.</p>
-        <p>Si opta por acciones de distintas series, deberá completar en el campo respectivo el tipo de voto y derecho asociado a las acciones preferidas. En caso de series con voto limitado, especifique en el campo libre, la forma de contabilizarlo.</p>
-        <h4>DERECHO DE LAS ACCIONES CUYO VALOR NO SE ENCUENTRE TOTALMENTE PAGADO</h4>
-        <p>Descripción: Se refiere a si las acciones cuyo valor no se encuentre totalmente pagado gozarán o no de algún derecho. Si nada indica, se entenderá que las acciones no gozarán de derecho alguno.</p>
-        <h4>PLAZO PARA SUSCRIBIR Y PAGAR CAPITAL</h4>
-        <p>Descripción: Se refiere al plazo que tendrán los accionistas para pagar el capital suscrito a la época de la constitución, o de las posteriores modificaciones de capital, cuando corresponda. Si nada indica se entenderá que dicho plazo será de 5 años contados desde la fecha de constitución de la sociedad, o de la modificación respectiva.</p>
-        <p>Nota: Si no se pagare oportunamente el capital al vencimiento del plazo, el capital quedará reducido al monto efectivamente suscrito y pagado.</p>
-        <img src="imagen9.png" alt="Imagen 9">
-        <img src="imagen10.png" alt="Imagen 10">
-
-        <h4>DURACIÓN DE LA SOCIEDAD</h4>
-        <p>Descripción: Se refiere al tiempo de vigencia de la sociedad. Si nada se indica, se entenderá que la sociedad tendrá duración indefinida.</p>
-        <h4>ADMINISTRACIÓN SOCIAL</h4>
-        <p>Descripción: Se refiere a la forma como se ejercerá la administración de la sociedad y se designarán sus representantes; con indicación de quienes la ejercerán provisionalmente, en su caso.</p>
-        <p>Alternativas u opciones:</p>
-        <ul>
-            <li>Directorio: Si elige esta opción, deberá señalar el número de miembros del directorio, la duración de su período, si serán o no remunerados, si existirán directores suplentes y la periodicidad de las sesiones.
-                En el campo en blanco, deberá señalar cómo serán designados los directores, y las demás reglas de administración que desee agregar.
-                Luego, en el PASO DOS, deberá individualizar a las personas que integrarán el primer directorio provisorio
-                </li>
-            <li>Gerente: El gerente podrá ser o no un accionista de la sociedad. Si elige esta opción, en el campo en blanco, deberá señalar como será designado, y las demás reglas de la administración que desee agregar. Luego en el Paso 2, designe un Administrador Transitorio, el cual ejercerá la administración de la sociedad provisoriamente.
-                Si designa a una persona determinada, deberá individualizarla en el PASO DOS. En este caso, no tendrá que designar Administrador Transitorio.
-                </li>
-            <li>Administración conjunta: Si elige esta opción, en el campo en blanco deberá señalar cómo serán designadas las personas que ejercerán la administración conjuntamente, y las demás reglas de administración que desee agregar. Luego en el Paso 2, designe a los Administradores Transitorios, los cuales ejercerán la administración de la sociedad provisoriamente.
-                Si desea designar a personas determinadas, deberá individualizarlas en el PASO 2. En este caso, no tendrá que designar a los Administradores Transitorios.
-                
-                </li>
-        </ul>
-        <img src="imagen11.png" alt="Imagen 11">
-
-        <h4>FACULTADES DE LA ADMINISTRACIÓN</h4>
-        <p>Descripción: Se refiere a las facultades con las que actuará en nombre de la sociedad y la representará, quien ejerza la administración de la sociedad.</p>
-        <p>Esta cláusula es opcional, pero es IMPORTANTE agregarla para efectos prácticos y operativos, en especial, si optó por una administración ejercida por Gerente o Administración Conjunta.</p>
-        <p>Importante: Si optó por una administración compuesta por Directorio, las facultades indicadas en esta cláusula, se entenderán otorgadas al Gerente.</p>
-        <p>Podrá seleccionar las facultades establecidas como ejemplo. Para abrir cuenta bancaria, se recomienda la cláusula preestablecida denominada "OPERACIONES CON BANCOS E INSTITUCIONES FINANCIERAS".</p>
-        <p>Designe libremente a quien desea otorgar las facultades (OPCIONAL)</p>
-        <p>Descripción: El campo libre permite redactar libremente a quien se le otorgan las facultades. Si nada dice, se entiende que se le otorgarán a las personas que ejercerán la administración, o al gerente, en caso de haber optado por la opción Directorio.</p>
-       
-        <h4>COMUNICACIÓN DE LA SOCIEDAD (OPCIONAL)</h4>
-        <p>Descripción: Se refiere a los medios de comunicación entre la sociedad o los accionistas. Se deberán indicar medios que otorguen razonable seguridad de su fidelidad. Si nada se indica, se utilizará el correo certificado.</p>
-
-        <h4>JUNTAS ORDINARIAS DE ACCIONISTAS</h4>
-        <p>Descripción: Los accionistas se reúnen en juntas, que pueden ser ordinarias o extraordinarias, para decidir las materias que la ley establece como de su competencia. Las disposiciones del estatuto social deben ser modificadas por acuerdo de la junta de accionistas. Las primeras se celebran una vez al año, en la época fija que determinen los estatutos. Las segundas se pueden celebrar en cualquier tiempo, cuando así lo exijan las necesidades sociales.</p>
-        <p>En el campo indicado podrá señalar la época de su celebración, las materias de su competencia en consideración a la ley, las reglas sobre su convocatoria, quórum y formalidades. Si nada se indica, las juntas deberán ajustarse a las normas generales sobre sociedades anónimas cerradas.</p>
-        <img src="imagen12.png" alt="Imagen 12">
-
-        <h4>RESOLUCIÓN DE DIFERENCIAS</h4>
-        <p>Descripción: Se refiere a la forma de resolución de diferencias entre los accionistas, los accionistas y la sociedad o sus administradores, y la sociedad y sus administradores o liquidadores, la cual deberá ser por medio de arbitraje.</p>
-        <p>En el campo correspondiente deberá indicar:</p>
-        <ol>
-            <li>El tipo de arbitraje y el número de integrantes del tribunal arbitral. Si nada se señala se entenderá que conocerá de las disputas en única instancia un solo árbitro de carácter mixto, y;</li>
-            <li>El nombre o la modalidad de designación de los árbitros y sus reemplazantes. Si nada se pacta, se entenderá que los árbitros serán designados por el tribunal de justicia del domicilio social.</li>
-        </ol>
-        <img src="imagen13.png" alt="Imagen 13">
-
-        <h4>DISTRIBUCIÓN DE UTILIDADES (OPCIONAL)</h4>
-        <p>Descripción: Se refiere a la participación de los socios en las utilidades de la sociedad. La regla general es que los dividendos se paguen a los accionistas, con cargo a las utilidades líquidas del ejercicio de la sociedad, a prorrata de sus acciones o en la proporción que establezcan los estatutos si hubieren acciones preferidas.
-            En el campo, podrá establecer la forma en que se repartirán las utilidades de la sociedad. También, por ejemplo, podrá señalar porcentajes mínimos de reparto de dividendos obligatorios. Si nada señala aplicarán las normas generales.</p>
-        <h4>OTROS PACTOS</h4>
-        p>Descripción: Se refiere a la posibilidad que tienen los accionistas de acordar otros pactos en conformidad al principio de la autonomía de la voluntad y con la única limitación de no ser contrarios a la ley.</p>
-        <img src="imagen14.png" alt="Imagen 14">
-        <img src="imagen15.png" alt="Imagen 15">
-        <img src="imagen16.png" alt="Imagen 16">
-        <img src="imagen17.png" alt="Imagen 17">
-
-        <h4>PASO A PASO PARA LTDA:</h4>
-        <img src="imagen18.png" alt="Imagen 18">
-        <img src="imagen19.png" alt="Imagen 19">
-        <img src="imagen20.png" alt="Imagen 20">
-        <img src="imagen21.png" alt="Imagen 21">
-        <img src="imagen22.png" alt="Imagen 22">
-        <img src="imagen23.png" alt="Imagen 23">
-
-    
-        
-
-
-        <h2>¡Listo, has completado el proceso de formalización de tu empresa!</h2>
-        <p>Ahora puedes operar legalmente y aprovechar todos los beneficios de tener una empresa formalizada.</p>
-        
-        <!-- Botón de regreso a la página Formalizar -->
-    <div class="back-button-container">
-        <a href="formalizar.html" class="back-button">
-            <span>&#8592;</span> Regresar a Formalización
-        </a>
+    <h3>NOMBRE DE FANTASÍA</h3>
+    <p>Descripción: Es el nombre que puede utilizar alternativamente la empresa, para fines publicitarios, comerciales y ante los bancos. Debe terminar con la palabra "SpA".</p>
+    <p>Ejemplo: AGRICOLA Los Muermos SpA</p>
+    <div class="image-container">
+        <img src="imagen7.png" alt="Imagen 1" class="zoomable-image">
     </div>
 
+    <h3>DOMICILIO TRIBUTARIO</h3>
+    <p>Descripción: Es el domicilio que se registrará en el SII. Además, este domicilio determinará qué sucursal del SII se le asignará a su sociedad (en dicha sucursal deberá retirar el RUT).</p>
+    
+
+    <h3>DOMICILIO DE LA SOCIEDAD</h3>
+    <p>Descripción: Se refiere al lugar donde funcionará la empresa, no es necesario que sea detallado. Completar al menos, la ciudad.</p>
+    <div class="image-container">
+        <img src="imagen8.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+    <!-- Continuar con las imágenes y la información restante -->
+
+    <h3>OBJETO SOCIAL</h3>
+    <p>Descripción: Se refiere a la actividad o rubro a que se dedicará la sociedad. Se admite la posibilidad de contemplar uno o más objetos específicos.</p>
+    <h3>CAPITAL DE LA SOCIEDAD</h3>
+    <p>Descripción: Se refiere al fondo común aportado por los socios, dividido en acciones. Las acciones que suscriban los accionistas podrán pagarse en dinero o con otros bienes, en conformidad a la información que será solicitada en el PASO 2.</p>
+    <h4>VALOR NOMINAL</h4>
+    <p>Descripción: Las acciones con valor nominal tienen un valor fijo. Por el contrario, las acciones sin valor nominal, solo representan un porcentaje del capital social, pero no tienen un valor determinado en los estatutos. Lo usual y la regla general es que las acciones sean SIN VALOR NOMINAL, por lo que le sugerimos completar esta opción.</p>
+    <h4>SERIE DE ACCIONES</h4>
+    <p>Descripción: Se entiende que son acciones de única serie, las acciones ordinarias, esto es, aquellas del mismo valor, que otorgan un voto por acción y todos los demás derechos inherentes a la acción, en conformidad a las normas generales aplicables. Las acciones de distinta serie están asociadas a acciones privilegiadas o preferidas, esto es, aquellas en que alguno de los derechos inherentes a la acción son modificados.</p>
+    <p>Si opta por acciones de distintas series, deberá completar en el campo respectivo el tipo de voto y derecho asociado a las acciones preferidas. En caso de series con voto limitado, especifique en el campo libre, la forma de contabilizarlo.</p>
+    <h4>DERECHO DE LAS ACCIONES CUYO VALOR NO SE ENCUENTRE TOTALMENTE PAGADO</h4>
+    <p>Descripción: Se refiere a si las acciones cuyo valor no se encuentre totalmente pagado gozarán o no de algún derecho. Si nada indica, se entenderá que las acciones no gozarán de derecho alguno.</p>
+    <h4>PLAZO PARA SUSCRIBIR Y PAGAR CAPITAL</h4>
+    <p>Descripción: Se refiere al plazo que tendrán los accionistas para pagar el capital suscrito a la época de la constitución, o de las posteriores modificaciones de capital, cuando corresponda. Si nada indica se entenderá que dicho plazo será de 5 años contados desde la fecha de constitución de la sociedad, o de la modificación respectiva.</p>
+    <p>Nota: Si no se pagare oportunamente el capital al vencimiento del plazo, el capital quedará reducido al monto efectivamente suscrito y pagado.</p>
+    <div class="image-container">
+        <img src="imagen9.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+    <div class="image-container">
+        <img src="imagen10.png" alt="Imagen 2" class="zoomable-image">
+    </div>
+
+    <h4>DURACIÓN DE LA SOCIEDAD</h4>
+    <p>Descripción: Se refiere al tiempo de vigencia de la sociedad. Si nada se indica, se entenderá que la sociedad tendrá duración indefinida.</p>
+    <h4>ADMINISTRACIÓN SOCIAL</h4>
+    <p>Descripción: Se refiere a la forma como se ejercerá la administración de la sociedad y se designarán sus representantes; con indicación de quienes la ejercerán provisionalmente, en su caso.</p>
+    <p>Alternativas u opciones:</p>
+    <ul>
+        <li>Directorio: Si elige esta opción, deberá señalar el número de miembros del directorio, la duración de su período, si serán o no remunerados, si existirán directores suplentes y la periodicidad de las sesiones.
+            En el campo en blanco, deberá señalar cómo serán designados los directores, y las demás reglas de administración que desee agregar.
+            Luego, en el PASO DOS, deberá individualizar a las personas que integrarán el primer directorio provisorio
+            </li>
+        <li>Gerente: El gerente podrá ser o no un accionista de la sociedad. Si elige esta opción, en el campo en blanco, deberá señalar como será designado, y las demás reglas de la administración que desee agregar. Luego en el Paso 2, designe un Administrador Transitorio, el cual ejercerá la administración de la sociedad provisoriamente.
+            Si designa a una persona determinada, deberá individualizarla en el PASO DOS. En este caso, no tendrá que designar Administrador Transitorio.
+            </li>
+        <li>Administración conjunta: Si elige esta opción, en el campo en blanco deberá señalar cómo serán designadas las personas que ejercerán la administración conjuntamente, y las demás reglas de administración que desee agregar. Luego en el Paso 2, designe a los Administradores Transitorios, los cuales ejercerán la administración de la sociedad provisoriamente.
+            Si desea designar a personas determinadas, deberá individualizarlas en el PASO 2. En este caso, no tendrá que designar a los Administradores Transitorios.
+            
+            </li>
+    </ul>
+    <div class="image-container">
+        <img src="imagen11.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+
+    <h4>FACULTADES DE LA ADMINISTRACIÓN</h4>
+    <p>Descripción: Se refiere a las facultades con las que actuará en nombre de la sociedad y la representará, quien ejerza la administración de la sociedad.</p>
+    <p>Esta cláusula es opcional, pero es IMPORTANTE agregarla para efectos prácticos y operativos, en especial, si optó por una administración ejercida por Gerente o Administración Conjunta.</p>
+    <p>Importante: Si optó por una administración compuesta por Directorio, las facultades indicadas en esta cláusula, se entenderán otorgadas al Gerente.</p>
+    <p>Podrá seleccionar las facultades establecidas como ejemplo. Para abrir cuenta bancaria, se recomienda la cláusula preestablecida denominada "OPERACIONES CON BANCOS E INSTITUCIONES FINANCIERAS".</p>
+    <p>Designe libremente a quien desea otorgar las facultades (OPCIONAL)</p>
+    <p>Descripción: El campo libre permite redactar libremente a quien se le otorgan las facultades. Si nada dice, se entiende que se le otorgarán a las personas que ejercerán la administración, o al gerente, en caso de haber optado por la opción Directorio.</p>
+   
+    <h4>COMUNICACIÓN DE LA SOCIEDAD (OPCIONAL)</h4>
+    <p>Descripción: Se refiere a los medios de comunicación entre la sociedad o los accionistas. Se deberán indicar medios que otorguen razonable seguridad de su fidelidad. Si nada se indica, se utilizará el correo certificado.</p>
+
+    <h4>JUNTAS ORDINARIAS DE ACCIONISTAS</h4>
+    <p>Descripción: Los accionistas se reúnen en juntas, que pueden ser ordinarias o extraordinarias, para decidir las materias que la ley establece como de su competencia. Las disposiciones del estatuto social deben ser modificadas por acuerdo de la junta de accionistas. Las primeras se celebran una vez al año, en la época fija que determinen los estatutos. Las segundas se pueden celebrar en cualquier tiempo, cuando así lo exijan las necesidades sociales.</p>
+    <p>En el campo indicado podrá señalar la época de su celebración, las materias de su competencia en consideración a la ley, las reglas sobre su convocatoria, quórum y formalidades. Si nada se indica, las juntas deberán ajustarse a las normas generales sobre sociedades anónimas cerradas.</p>
+    <div class="image-container">
+        <img src="imagen12.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+
+    <h4>RESOLUCIÓN DE DIFERENCIAS</h4>
+    <p>Descripción: Se refiere a la forma de resolución de diferencias entre los accionistas, los accionistas y la sociedad o sus administradores, y la sociedad y sus administradores o liquidadores, la cual deberá ser por medio de arbitraje.</p>
+    <p>En el campo correspondiente deberá indicar:</p>
+    <ol>
+        <li>El tipo de arbitraje y el número de integrantes del tribunal arbitral. Si nada se señala se entenderá que conocerá de las disputas en única instancia un solo árbitro de carácter mixto, y;</li>
+        <li>El nombre o la modalidad de designación de los árbitros y sus reemplazantes. Si nada se pacta, se entenderá que los árbitros serán designados por el tribunal de justicia del domicilio social.</li>
+    </ol>
+    <div class="image-container">
+        <img src="imagen13.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+
+    <h4>DISTRIBUCIÓN DE UTILIDADES (OPCIONAL)</h4>
+    <p>Descripción: Se refiere a la participación de los socios en las utilidades de la sociedad. La regla general es que los dividendos se paguen a los accionistas, con cargo a las utilidades líquidas del ejercicio de la sociedad, a prorrata de sus acciones o en la proporción que establezcan los estatutos si hubieren acciones preferidas.
+        En el campo, podrá establecer la forma en que se repartirán las utilidades de la sociedad. También, por ejemplo, podrá señalar porcentajes mínimos de reparto de dividendos obligatorios. Si nada señala aplicarán las normas generales.</p>
+    <h4>OTROS PACTOS</h4>
+    <p>Descripción: Se refiere a la posibilidad que tienen los accionistas de acordar otros pactos en conformidad al principio de la autonomía de la voluntad y con la única limitación de no ser contrarios a la ley.</p>
+    <div class="image-container">
+        <img src="imagen14.png" alt="Imagen 1" class="zoomable-image">
+    </div>
+    <div class="image-container">
+        <img src="imagen15.png" alt="Imagen 2" class="zoomable-image">
+    </div>
+    <div class="image-container">
+        <img src="imagen16.png" alt="Imagen 3" class="zoomable-image">
+    </div>
+    <div class="image-container">
+        <img src="imagen17.png" alt="Imagen 3" class="zoomable-image">
+    </div>
+
+
+    
+
+
+    <h2>¡Listo, has completado el proceso de formalización de tu empresa!</h2>
+    <p>Ahora puedes operar legalmente y aprovechar todos los beneficios de tener una empresa formalizada.</p>
+
+        <!-- Botón de regreso a la página Formalizar -->
+        <div class="back-button-container">
+            <a href="formalizar.html" class="back-button">
+                <span>&#8592;</span> Regresar a Formalización
+            </a>
+        </div>
     </div>
 
     
@@ -194,11 +226,25 @@
         <div class="contact-info">
             <p>Contacto: <a href="mailto:angie.aguilar.m@mail.pucv.cl">angie.aguilar.m@mail.pucv.cl</a></p>
             <p>Contacto: <a href="mailto:karina.rozas.r@mail.pucv.cl">karina.rozas.r@mail.pucv.cl</a></p>
-
-        </div>
-        <div class="copyright">
-            <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Estructura HTML para la imagen ampliada (debe estar al final de tu documento HTML): -->
+    <div class="zoom-overlay">
+        <img src="" alt="Zoomed Image" class="zoomed-image">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".zoomable-image").click(function () {
+                $(".zoom-overlay").fadeIn();
+                $(".zoomed-image").attr("src", $(this).attr("src"));
+            });
+
+            $(".zoom-overlay").click(function () {
+                $(this).fadeOut();
+            });
+        });
+    </script>
 </body>
 </html>

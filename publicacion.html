@@ -24,11 +24,6 @@
     <div class="container">
         <h1 class="extra-large-title">Plataformas para publicar productos</h1>
         
-        <!-- Buscador funcional mejorado -->
-        <div class="search-container">
-            <input type="text" id="searchInput" class="search-input" placeholder="Buscar plataforma...">
-            <button id="searchButton" class="search-button">Buscar</button>
-        </div>
 
         <!-- Tabla comparativa -->
         <div class="table-container">
@@ -86,6 +81,16 @@
             <span>&#8592;</span> Regresar a Herramientas
         </a>
     </div>
+
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(function () {
+                // Carga el contenido del footer.html en el footer de la página
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
 
     <script src="script.js"></script>
 </body>

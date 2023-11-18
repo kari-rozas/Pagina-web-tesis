@@ -1,5 +1,4 @@
 /* Estilos generales */
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #E8A0BF; /* Color de fondo pastel */
@@ -23,7 +22,6 @@ body {
     max-width: 800px; /* Ancho máximo del cuadro */
     margin: 20px auto; /* Centra horizontalmente el cuadro principal */
 }
-
 
 .extra-large-title {
     font-size: 60px; /* Tamaño de fuente más grande */
@@ -56,7 +54,6 @@ body {
     margin: 10px; /* Margen entre los botones */
     transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
 }
-
 
 /* Estilos para el menú */
 .menu-container {
@@ -250,6 +247,26 @@ img {
     height: auto; /* Mantiene la proporción de aspecto de las imágenes */
     border-radius: 10px; /* Agrega bordes redondeados a las imágenes */
     margin-bottom: 10px; /* Espacio entre imágenes */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse sobre las imágenes */
+}
+
+/* Estilos para la imagen ampliada */
+.zoom-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.zoomed-image {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 /* Estilos para sumup.html */
@@ -259,4 +276,95 @@ img {
 
 .button-description {
     margin-bottom: 20px; /* Espacio entre la descripción y la lista */
+}
+
+#logo {
+    width: 400px; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantiene la proporción original del logo */
+}
+
+footer {
+    background-color:#E8A0BF; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 5px; /* Espaciado interno reducido */
+    text-align: center; /* Alineación al centro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: auto; /* Mueve el footer hacia la parte inferior */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinea los elementos en columna */
+}
+
+.contact-info h3 {
+    display: block; /* Muestra el título */
+    margin-bottom: 5px; /* Añade un pequeño margen inferior */
+}
+
+.contact-info p {
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.contact-info a {
+    color: #BA90C6; /* Cambia el color del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Texto en negrita */
+    margin: 0 10px; /* Espacio entre los correos */
+}
+
+/* Efecto hover para el enlace */
+.contact-info a:hover {
+    color: #ffb6b5; /* Cambia el color al pasar el mouse */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 250px; /* Ajusta el ancho según tus preferencias */
+    text-align: left;
+}
+
+.warning-box {
+    display: none;
+    position: fixed;
+    background-color: #fff1e6;
+    border: 2px solid #e34c26;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease; /* Añade transición de opacidad */
+}
+
+.warning-box p {
+    margin: 0; /* Elimina el margen interno del párrafo */
+    color: #e34c26;
+}
+
+.warning-box a {
+    color: #e34c26;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #e34c26;
+    transition: color 0.3s ease;
+}
+
+.warning-box a:hover {
+    color: #c13a0a;
+}
+
+/* Añade una clase para cambiar la opacidad */
+.hide {
+    opacity: 0;
+    pointer-events: none; /* Evita interacción con el cuadro oculto */
 }

@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo en la esquina superior izquierda con enlace al inicio -->
-    <a href="index.html" class="logo-container">
-        <img src="pucv.png" alt="Logo" id="logo">
-    </a>
+    <!-- Header: Logo en la esquina superior izquierda con enlace al inicio -->
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img id="logo" src="pucv.png" alt="Logo" class="logo"></a>
+        </div>
+        <nav class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
+                <li class="menu-item"><a href="preguntas.html" class="menu-link">Preguntas frecuentes</a></li>
+                <li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <div style="font-size: 50px;  font-style:inherit ;">
@@ -41,13 +50,21 @@
             
             <div style="margin-top: 20px;">
                 Adobe en su página web cuenta con su propia sección de aprendizaje, donde se pueden encontrar tutoriales para distintos niveles de conocimientos en la plataforma.
-                <img src="photoshoptutoriales.PNG" width="650px" style="margin-top: 20px;">
+                <div class="image-container">
+                    <img src="photoshoptutoriales.PNG" class="zoomable-image" style="width: 100%; max-width: 800px; margin-top: 20px;">
+                </div>
             </div>      
             
             <div class="app-button">
                 <a href="https://creativecloud.adobe.com/es-CL/learn/app/photoshop" class="extra-large-button" target="_blank">Ir a tutoriales </a>
             </div>
+        </div>
     </div>
+
+    <!-- Estructura HTML para la imagen ampliada (debe estar al final de tu documento HTML): -->
+ <div class="zoom-overlay">
+    <img src="" alt="Zoomed Image" class="zoomed-image">
+</div>
 
 
     <!-- Botón de regreso a la página de inicio -->
@@ -56,6 +73,18 @@
             <span>&#8592;</span> Regresar a Inicio
         </a>
     </div>
+
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(function () {
+                // Carga el contenido del footer.html en el footer de la página
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
+
+    
 
     <script src="script.js"></script>
 </body>

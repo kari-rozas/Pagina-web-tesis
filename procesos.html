@@ -23,8 +23,9 @@
 
     <div class="container">
         <h1 class="extra-large-title">Procesos legales</h1>
-        <p class="button-description">Obtén una guía paso a paso para formalizar tu pequeña o mediana empresa.</p>
-        <p class="button-description">Aprende sobre el sistema tributario y cómo calcular y pagar tus impuestos.</p>
+        <p class="button-description">A continuación se presentan dos alternativas:</p>
+        <li>El primer botón te lleva a la guía para formalizar tu emprendimiento</li>
+        <li>El segundo botón te lleva a la guía para aprender a pagar tus impuestos</li>
         <div class="button-container">
             <div class="button-description-container">
                 <a href="formalizar.html" class="extra-large-button">Cómo formalizar tu pyme</a>
@@ -41,6 +42,16 @@
             <span>&#8592;</span> Regresar a Inicio
         </a>
     </div>
+
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(function () {
+                // Carga el contenido del footer.html en el footer de la página
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
 
     <script src="script.js"></script>
 </body>

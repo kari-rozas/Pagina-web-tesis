@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo en la esquina superior izquierda con enlace al inicio -->
-    <a href="index.html" class="logo-container">
-        <img src="pucv.png" alt="Logo" id="logo">
-    </a>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img id="logo" src="pucv.png" alt="Logo" class="logo"></a>
+        </div>
+        <nav class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
+                <li class="menu-item"><a href="preguntas.html" class="menu-link">Preguntas frecuentes</a></li>
+                <li class="menu-item"><a href="contacto.html" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <div style="font-size: 50px;  font-style:inherit ;">
@@ -39,6 +47,13 @@
             <div class="app-button">
                 <a href="https://aprendergratis.es/cursos-online/informatica/excell/" class="extra-large-button" target="_blank">Ir a tutoriales gratuitos</a>
             </div>
+            <div class="excel-template">
+                <h3>Descarga la plantilla de Excel para inventario:</h3>
+                <a href="assets/plantilla_inventario.xlsx" download="plantilla_inventario.xlsx" class="download-link">
+                    Descargar Plantilla
+                </a>
+            </div>
+            </div>
     </div>
 
 
@@ -50,5 +65,15 @@
     </div>
 
     <script src="script.js"></script>
+    
 </body>
+<footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function () {
+            // Carga el contenido del footer.html en el footer de la página
+            $("footer").load("footer.html");
+        });
+    </script>
+</footer>
 </html>

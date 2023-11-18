@@ -23,16 +23,7 @@
 
     <div class="container">
         <h1 class="extra-large-title">Aplicaciones para edición de fotos</h1>
-        <!-- Barra de búsqueda y botón de filtro -->
-        <div class="search-filter-container">
-            <input type="text" placeholder="Buscar..." class="search-input" id="searchInput">
-            <button class="filter-button" id="searchButton">Filtrar</button>
-        </div>
-        <!-- Nivel y Dispositivos -->
-        <div class="level-device-container">
-            <div class="level">Nivel</div>
-            <div class="device">Dispositivos</div>
-        </div>
+        
         <!-- Botones de aplicaciones -->
         <div class="button-container" id="appContainer">
             <!-- Canva -->
@@ -229,6 +220,16 @@
             <span>&#8592;</span> Regresar a Herramientas Recomendadas
         </a>
     </div>
+
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            $(function () {
+                // Carga el contenido del footer.html en el footer de la página
+                $("footer").load("footer.html");
+            });
+        </script>
+    </footer>
 
     <script src="script.js"></script>
 </body>

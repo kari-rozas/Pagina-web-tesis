@@ -1,66 +1,61 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #E8A0BF;
+    background-color: #E8A0BF; /* Color de fondo pastel */
     margin: 0;
     padding: 0;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Cambia la dirección del flex container a columna */
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /* Cambia height a min-height para evitar que el contenido lo haga más alto */
 }
 
 .container {
-    background-color: #FDF4F5;
+    background-color: #FDF4F5; /* Color de fondo del cuadro principal */
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-bottom: 20px; /* Espacio entre el cuadro principal y el botón de regreso */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    margin: 20px auto; /* Centra horizontalmente el cuadro principal */
 }
 
 .extra-large-title {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 60px; /* Tamaño de fuente más grande */
+    margin-top: 20px; /* Mayor separación arriba */
     color: #BA90C6;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    word-wrap: break-word;
+    word-wrap: break-word; /* Permite que el título se separe en múltiples líneas */
 }
 
 .button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Espaciado uniforme entre los botones */
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permitir que los botones se envuelvan a la siguiente línea si es necesario */
     margin-top: 20px;
 }
 
 .extra-large-button {
-    display: inline-block;
-    width: 48%;
-    max-width: 300px;
-    padding: 15px 30px;
-    background-color: #8a5e96;
+    display: inline-block; /* Coloca los botones en línea uno al lado del otro */
+    width: 48%; /* Ancho del botón alrededor del 48% para dejar espacio entre ellos */
+    max-width: 300px; /* Ancho máximo del botón */
+    padding: 15px 30px; /* Padding más grande */
+    background-color: #8a5e96; /* Color de fondo */
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: bold; /* Letras más vistosas */
+    font-size: 18px; /* Tamaño de fuente */
     border: none;
-    border-radius: 75px;
-    margin: 10px;
-    transition: background-color 0.3s ease, transform 0.5s ease;
+    border-radius: 75px; /* Forma más redondeada */
+    margin: 10px; /* Margen entre los botones */
+    transition: background-color 0.3s ease, transform 0.5s ease; /* Agrega transiciones de color y transformación */
 }
-
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
-    body {
-      display: block; /* Cambia la dirección del flex container a bloque para dispositivos móviles */
-    }
-  
     .container {
       width: 90%; /* Ajusta el ancho del cuadro principal para dispositivos móviles */
     }
@@ -69,14 +64,10 @@ body {
       font-size: 36px; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
   
-    .extra-large-button {
-      width: 100%; /* Ancho completo para los botones en dispositivos móviles */
-    }
-  
     .back-button-container {
       margin-top: 20px; /* Ajusta el espacio superior para el botón de regreso en dispositivos móviles */
     }
-}
+  }
 /* Estilos para el menú */
 .menu-container {
     display: flex;
